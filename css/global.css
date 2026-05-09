@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* cores do projeto */
+  --green:      #2ECC71;
+  --green-d:    #27ae60;
+  --blue:       #3498DB;
+  --blue-d:     #2980b9;
+  --bg:         #f0f4f8;
+  --surface:    #ffffff;
+  --text:       #1a202c;
+  --muted:      #718096;
+  --border:     #e2e8f0;
+
+  /* Gradiente padrão */
+  --gradient: linear-gradient(135deg, var(--green), var(--blue));
+
+  /* fonte */
+  --font: 'Poppins', sans-serif;
+
+  /* espacamentos */
+  --radius-sm:   8px;
+  --radius-md:   16px;
+  --radius-full: 999px;
+
+  /* efeitod de sombra */
+  --shadow-sm: 0 2px 8px rgba(0,0,0,.06);
+  --shadow-md: 0 8px 24px rgba(0,0,0,.10);
+
+  /* navbar */
+  --nav-h: 68px;
+
+  /* Transiçao */
+  --transition: .22s ease;
+}
+
+.subtitle{
+
+}
