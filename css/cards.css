@@ -16,7 +16,7 @@
   border: 1px solid var(--border);
   overflow: hidden;
   gap: 10px;
-  padding-bottom: 24px;
+  
 }
 
 .card-grid{
@@ -44,12 +44,9 @@
 
 .redes-sociais {
   display: flex;
-  gap: 12px;
   margin-top: auto;
   border-top: 1px solid var(--border);
   width: 100%;
-  justify-content: center;
-  padding: 14px 0;
 }
 
 .card-efeito {
@@ -64,18 +61,23 @@
   transition: transform var(--transition), box-shadow var(--transition);
 }
 
-.github, .linkedin{
-  font-size: .9rem;
-  font-weight: 600;
+.github, .linkedin {
+  flex: 1;
+  text-align: center;
+  padding: 14px 0;
+  font-size: .85rem;
+  font-weight: 500;
   color: var(--muted);
-  padding: 6px 12px;
-  border-radius: var(--radius-full);
-  border: 1px solid var(--border);
-  transition: background var(--transition), color var(--transition);
-}
+  border-radius: 0;
+  border: none;
+  transition: background var(--transition), color var(--transition);}
 
 .github:hover {background: #1a202c; color: #fff;}
 .linkedin:hover {background: var(--blue); color: #fff;}
+
+.github {
+  border-right: 1px solid var(--border);
+}
 
 
 
