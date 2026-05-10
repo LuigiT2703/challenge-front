@@ -37,7 +37,48 @@
   /* Transiçao */
   --transition: .22s ease;
 }
-
-.subtitle{
-
+body {
+  background: var(--bg);
+  font-family: var(--font);
 }
+
+h1 {
+  font: 700 2.5rem/1.15 var(--font);
+  color: var(--text);
+  margin-bottom: .75rem;
+}
+
+h2 {
+  font: 700 1.75rem/1.2 var(--font);
+  color: var(--text);
+  margin-bottom: .5rem;
+}
+
+p {
+  font: 400 1rem/1.6 var(--font);
+  color: var(--muted);
+  margin-bottom: .25rem;
+}
+
+span {
+  font-family: var(--font);
+}
+
+.equipe {
+  display: inline-block;
+  background: var(--gradient);
+  border-radius: var(--radius-full);
+  letter-spacing: .1em;
+  padding: 5px 16px;
+  color: #fff;
+  font-size: .75rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.centralizar {
+  display: block;
+  text-align: center;
+  margin-top: 4rem;
+}
+
