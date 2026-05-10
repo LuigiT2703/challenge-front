@@ -5,7 +5,6 @@
   object-fit: cover;
   border: 2px solid var(--green);
   margin-top: 2rem;
-
 }
 
 .card{
@@ -16,7 +15,8 @@
   border-radius: var(--radius-md);
   border: 1px solid var(--border);
   overflow: hidden;
-
+  gap: 10px;
+  padding-bottom: 24px;
 }
 
 .card-grid{
@@ -46,6 +46,10 @@
   display: flex;
   gap: 12px;
   margin-top: auto;
+  border-top: 1px solid var(--border);
+  width: 100%;
+  justify-content: center;
+  padding: 14px 0;
 }
 
 .card-efeito {
@@ -53,5 +57,26 @@
   height: 4px;
   background: var(--gradient);
 }
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.github, .linkedin{
+  font-size: .9rem;
+  font-weight: 600;
+  color: var(--muted);
+  padding: 6px 12px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border);
+  transition: background var(--transition), color var(--transition);
+}
+
+.github:hover {background: #1a202c; color: #fff;}
+.linkedin:hover {background: var(--blue); color: #fff;}
+
+
 
 
