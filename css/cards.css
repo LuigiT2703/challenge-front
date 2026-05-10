@@ -16,8 +16,7 @@
   border-radius: var(--radius-md);
   border: 1px solid var(--border);
   overflow: hidden;
-  width: 516px;
-  height: 312px;
+
 }
 
 .card-grid{
@@ -41,6 +40,18 @@
   border-radius: var(--radius-full);
   padding: .5rem;
   margin: 0 auto;
+}
+
+.redes-sociais {
+  display: flex;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.card-efeito {
+  width: 100%;
+  height: 4px;
+  background: var(--gradient);
 }
 
 
