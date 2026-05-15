@@ -15,7 +15,7 @@
   --text:       #1a202c;
   --muted:      #718096;
   --border:     #e2e8f0;
-
+  --dark:       #1A1A2E;
   /* Gradiente padrão */
   --gradient: linear-gradient(135deg, var(--green), var(--blue));
 
