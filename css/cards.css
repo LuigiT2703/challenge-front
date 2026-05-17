@@ -68,6 +68,7 @@
   font-weight: 500;
   color: var(--muted);
   border-radius: 0;
+  text-decoration: none;
   border: none;
   transition: background var(--transition), color var(--transition);}
 
