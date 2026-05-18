@@ -4,3 +4,17 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
+.btn-primario {
+  display: inline-block;
+  background: var(--gradient);
+  color: #fff;
+  text-decoration: none;
+  padding: 14px 32px;
+  border-radius: var(--radius-full);
+  font: 600 1rem var(--font);
+  transition: opacity var(--transition);
+}
+
+.btn-primario:hover { opacity: .88; }
+
