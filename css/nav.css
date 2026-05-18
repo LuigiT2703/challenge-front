@@ -23,7 +23,6 @@
   text-decoration: none;
   white-space: nowrap;
   flex-shrink: 0;
-  margin-right: auto;
 }
 
 .nav-links {
@@ -77,5 +76,12 @@
   height: 2px;
   background: #fff;
   border-radius: 2px;
+}
+
+.nav-ativo {
+  background: rgba(255,255,255,.12);
+  color: #fff !important;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
 }
 
