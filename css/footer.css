@@ -1,6 +1,27 @@
-footer {
-  text-align: center;
-  padding: 2.5rem 0;
-  font-size: .9rem;
+.footer {
+  background: var(--dark);
+  padding: 64px 24px 0;
+}
+
+.footer-container {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 3rem;
+  padding-bottom: 48px;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.footer-logo {
+  font: 700 1.3rem var(--font);
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .footer-container { grid-template-columns: 1fr; gap: 2rem; }
 }
 
