@@ -74,12 +74,12 @@
 }
 .stat-label { font: 500 .9rem var(--font); color: var(--muted); }
 
-/* SEÇÕES */
+
 .secao-container { max-width: 1120px; margin: 0 auto; padding: 80px 24px; text-align: center; }
 .secao-container h2 { font: 700 2rem/1.2 var(--font); color: var(--text); margin-bottom: .5rem; }
 .secao-desc { color: var(--muted); font: 400 1rem/1.6 var(--font); margin-bottom: 3rem; }
 
-/* COMO FUNCIONA */
+
 .como-funciona { background: var(--bg); }
 .passos-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.5rem; text-align: left; }
 .passo-card {
@@ -95,7 +95,6 @@
 .passo-card h3 { font: 600 1.1rem var(--font); color: var(--text); margin-bottom: .5rem; }
 .passo-card p { font: 400 .9rem/1.6 var(--font); color: var(--muted); margin: 0; }
 
-/* CATEGORIAS */
 .categorias { background: var(--surface); }
 .cat-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 1.25rem; }
 .cat-card {
@@ -119,7 +118,6 @@
   border-radius: var(--radius-full);
 }
 
-/* RECOMPENSAS */
 .recompensas { background: var(--dark); }
 .recompensas .secao-container h2 { color: #fff; }
 .recompensas .secao-desc { color: rgba(255,255,255,.6); }
