@@ -1,0 +1,24 @@
+.faq-hero {
+  background: var(--gradient);
+  padding: 80px 24px;
+  text-align: center;
+}
+.faq-hero h1 { color: #fff; font-size: 2.5rem; }
+.faq-hero p  { color: rgba(255,255,255,.85); margin-top: .5rem; } */
+
+/* ── Busca ── */
+
+ .faq-busca { 
+    max-width: 560px;
+  margin: 2rem auto 0;
+  position: relative;
+}
+.faq-busca input {
+  width: 100%;
+  padding: 14px 20px 14px 48px;
+  border-radius: var(--radius-full);
+  border: none;
+  font: 400 .95rem var(--font);
+  outline: none;
+  box-shadow: var(--shadow-md);
+}
