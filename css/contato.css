@@ -1,0 +1,99 @@
+.contato-hero {
+  background: var(--gradient);
+  padding: 80px 24px;
+  text-align: center;
+}
+.contato-hero h1 { color: #fff; font-size: 2.5rem; }
+.contato-hero p  { color: rgba(255,255,255,.85); margin-top: .5rem; }
+
+/* ── Grid ── */
+.contato-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+/* ── Formulário ── */
+.form-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 2.5rem;
+  box-shadow: var(--shadow-sm);
+}
+.form-card h2 { margin-bottom: 1.5rem; }
+
+.form-grupo {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  margin-bottom: 1.25rem;
+}
+.form-grupo label {
+  font: 600 .88rem var(--font);
+  color: var(--text);
+}
+.form-grupo input,
+.form-grupo select,
+.form-grupo textarea {
+  padding: 12px 16px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  font: 400 .95rem var(--font);
+  color: var(--text);
+  background: var(--surface);
+  transition: border-color var(--transition);
+  outline: none;
+  width: 100%;
+}
+.form-grupo input:focus,
+.form-grupo select:focus,
+.form-grupo textarea:focus { border-color: var(--green); }
+.form-grupo textarea { resize: vertical; min-height: 140px; }
+
+.form-aviso { font-size: .88rem; min-height: 1.2rem; margin-bottom: .5rem; }
+
+/* ── Informações ── */
+.info-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.info-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.info-icon {
+  width: 44px; height: 44px;
+  border-radius: var(--radius-sm);
+  background: var(--gradient);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+.info-item strong { display: block; font: 600 .95rem var(--font); color: var(--text); margin-bottom: .25rem; }
+.info-item span   { font-size: .88rem; color: var(--muted); }
+
+.social-links { display: flex; gap: .75rem; flex-wrap: wrap; }
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  border: 1.5px solid var(--border);
+  font: 500 .85rem var(--font);
+  color: var(--text);
+  transition: all var(--transition);
+}
+.social-link:hover { background: var(--green); color: #fff; border-color: var(--green); }
+
+@media (max-width: 768px) {
+  .contato-grid { grid-template-columns: 1fr; }
+}
