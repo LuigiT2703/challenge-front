@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato — SoulUp</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/contato.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a class="nav-logo" href="../index.html">🌿 SoulUp</a>
+      <button class="nav-botao" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="../index.html#como-funciona">Como Funciona</a></li>
+        <li><a href="./ranking.html">Ranking</a></li>
+        <li><a href="../index.html#recompensas">Recompensas</a></li>
+        <li><a href="./faq.html">FAQ</a></li>
+        <li><a href="./contato.html" class="nav-ativo">Contato</a></li>
+      </ul>
+      <a href="./dashboard.html" class="nav-comecar">Começar Agora</a>
+    </div>
+  </nav>
+
+  <header class="contato-hero">
+    <h1>Fale com a Gente</h1>
+    <p>Tire suas dúvidas, envie sugestões ou entre em contato com nossa equipe.</p>
+  </header>
+
+  <main style="max-width:1120px; margin:0 auto; padding:64px 24px;">
+    <div class="contato-grid">
+
+      <!-- Formulário -->
+      <div class="form-card">
+        <h2>Envie uma Mensagem</h2>
+        <form class="contato-form" novalidate>
+
+          <div class="form-grupo">
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+            <span class="form-aviso" id="aviso-nome"></span>
+          </div>
+
+          <div class="form-grupo">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+            <span class="form-aviso" id="aviso-email"></span>
+          </div>
+
+          <div class="form-grupo">
+            <label for="assunto">Assunto</label>
+            <select id="assunto" name="assunto">
+              <option value="">Selecione um assunto</option>
+              <option value="duvida">Dúvida geral</option>
+              <option value="sugestao">Sugestão</option>
+              <option value="problema">Problema técnico</option>
+              <option value="parceria">Parceria</option>
+              <option value="outro">Outro</option>
+            </select>
+          </div>
+
+          <div class="form-grupo">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui..." required></textarea>
+            <span class="form-aviso" id="aviso-mensagem"></span>
+          </div>
+
+          <button type="submit" style="
+            display:inline-block;
+            background: var(--gradient);
+            color:#fff;
+            border:none;
+            padding:14px 32px;
+            border-radius:var(--radius-full);
+            font:600 1rem var(--font);
+            cursor:pointer;
+            width:100%;
+            transition:opacity var(--transition);
+          ">Enviar Mensagem →</button>
+
+        </form>
+      </div>
+
+      <!-- Informações de contato -->
+      <div class="info-card">
+
+        <div class="info-item">
+          <div class="info-icon">📧</div>
+          <div>
+            <strong>E-mail</strong>
+            <span>contato@soulup.com.br</span>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">📍</div>
+          <div>
+            <strong>Localização</strong>
+            <span>São Paulo, SP — Brasil</span>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">⏱️</div>
+          <div>
+            <strong>Horário de Atendimento</strong>
+            <span>Segunda a Sexta, 9h às 18h</span>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">🤝</div>
+          <div>
+            <strong>Programa Prospera</strong>
+            <span>parceria@programaprospera.gov.br</span>
+          </div>
+        </div>
+
+        <div>
+          <p style="font:600 .88rem var(--font); color:var(--text); margin-bottom:.75rem;">Nossas redes</p>
+          <div class="social-links">
+            <a href="https://github.com/LuigiT2703" target="_blank" class="social-link">💻 GitHub</a>
+            <a href="https://linkedin.com" target="_blank" class="social-link">💼 LinkedIn</a>
+            <a href="#" class="social-link">📷 Instagram</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-marca">
+        <a href="../index.html" class="footer-logo">🌿 SoulUp</a>
+        <p>Transforme hábitos em impacto. Ganhe pontos por ações sustentáveis e concorra a subsídios reais na sua conta de energia.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="./sobre.html">Sobre</a></li>
+          <li><a href="./integrantes.html">Integrantes</a></li>
+          <li><a href="./faq.html">FAQ</a></li>
+          <li><a href="./contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Siga-nos</h4>
+        <div class="footer-redes">
+          <a href="https://github.com/LuigiT2703" target="_blank" class="footer-rede">GitHub</a>
+          <a href="https://linkedin.com" target="_blank" class="footer-rede">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 SoulUp — Programa Prospera. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
