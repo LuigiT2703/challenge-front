@@ -1,0 +1,104 @@
+/* ── FAQ Hero ── */
+.faq-hero {
+  background: var(--gradient);
+  padding: 72px 24px 56px;
+  text-align: center;
+  color: #fff;
+}
+.faq-hero .chip {
+  display: inline-block;
+  background: rgba(255,255,255,.2);
+  border-radius: var(--radius-full);
+  padding: 5px 16px;
+  font: 600 .75rem var(--font);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+.faq-hero h1 { font: 700 2.4rem/1.1 var(--font); color: #fff; margin-bottom: .5rem; }
+.faq-hero p  { color: rgba(255,255,255,.85); font: 400 1rem var(--font); }
+
+/* ── Busca ── */
+.faq-busca {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  max-width: 440px;
+  margin: 1.5rem auto 0;
+  background: rgba(255,255,255,.15);
+  border: 1.5px solid rgba(255,255,255,.35);
+  border-radius: var(--radius-full);
+  padding: 10px 20px;
+}
+.faq-busca input {
+  background: none;
+  border: none;
+  outline: none;
+  font: 400 .95rem var(--font);
+  color: #fff;
+  width: 100%;
+}
+.faq-busca input::placeholder { color: rgba(255,255,255,.7); }
+.busca-icon { font-size: 1.1rem; }
+
+/* ── Layout geral ── */
+.section { padding: 64px 24px; }
+.container { max-width: 800px; margin: 0 auto; }
+
+/* ── Itens FAQ ── */
+.faq-lista { display: flex; flex-direction: column; gap: .75rem; }
+
+.faq-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: box-shadow var(--transition);
+}
+.faq-item:hover { box-shadow: var(--shadow-sm); }
+
+.faq-pergunta {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: 600 1rem var(--font);
+  color: var(--text);
+  text-align: left;
+}
+
+.faq-chevron {
+  font-size: .75rem;
+  color: var(--green);
+  transition: transform var(--transition);
+  flex-shrink: 0;
+}
+.faq-item.aberto .faq-chevron { transform: rotate(180deg); }
+
+.faq-resposta {
+  display: none;
+  padding: 0 1.5rem 1.25rem;
+}
+.faq-resposta p { font: 400 .95rem/1.7 var(--font); color: var(--muted); margin: 0; }
+.faq-item.aberto .faq-resposta { display: block; }
+
+/* ── CTA ── */
+.faq-cta {
+  background: var(--dark);
+  border-radius: var(--radius-md);
+  padding: 2.5rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+.faq-cta h3 { font: 700 1.3rem var(--font); color: #fff; margin-bottom: .5rem; }
+.faq-cta p  { color: rgba(255,255,255,.65); margin-bottom: 1.5rem; }
+
+.btn { display: inline-block; padding: 12px 28px; border-radius: var(--radius-full); font: 600 .95rem var(--font); text-decoration: none; transition: opacity var(--transition); }
+.btn-primary { background: var(--gradient); color: #fff; }
+.btn-primary:hover { opacity: .88; }

@@ -1,64 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-:root {
-  --green:      #2ECC71;
-  --green-d:    #27ae60;
-  --blue:       #3498DB;
-  --bg:         #f0f4f8;
-  --surface:    #ffffff;
-  --text:       #1a202c;
-  --muted:      #718096;
-  --border:     #e2e8f0;
-  --gradient:   linear-gradient(135deg, var(--green), var(--blue));
-  --font:       'Poppins', sans-serif;
-  --radius-sm:  8px;
-  --radius-md:  16px;
-  --radius-full:999px;
-  --shadow-md:  0 8px 24px rgba(0,0,0,.10);
-  --transition: .22s ease;
-}
-
-body {
-  background: var(--bg);
-  font-family: var(--font);
-}
-
-h2 { font: 700 1.75rem/1.2 var(--font); color: var(--text); margin-bottom: .5rem; }
-p  { font: 400 1rem/1.6 var(--font); color: var(--muted); margin-bottom: .25rem; }
-a  { text-decoration: none; color: inherit; }
-
-.gradiente-efeito {
-  background: var(--gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.equipe {
-  display: inline-block;
-  background: var(--gradient);
-  border-radius: var(--radius-full);
-  letter-spacing: .1em;
-  padding: 5px 16px;
-  color: #fff;
-  font-size: .75rem;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-}
-
-.centralizar {
-  display: block;
-  text-align: center;
-  margin-top: 4rem;
-}
+/* ── Cards de integrantes ── */
 
 header { padding-bottom: 2rem; }
 
-/* ── Cards ── */
 .foto-gurizada {
   width: 96px; height: 96px;
   border-radius: 50%;
@@ -85,7 +28,7 @@ header { padding-bottom: 2rem; }
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   padding: 48px 24px;
   max-width: 1120px;
@@ -125,19 +68,12 @@ header { padding-bottom: 2rem; }
   font-size: .85rem;
   font-weight: 500;
   color: var(--muted);
-  border-radius: 0;
-  border: none;
   transition: background var(--transition), color var(--transition);
 }
 .github:hover   { background: #1a202c; color: #fff; }
 .linkedin:hover { background: var(--blue); color: #fff; }
 .github { border-right: 1px solid var(--border); }
 
-footer {
-  text-align: center;
-  padding: 2rem;
-  font-size: .85rem;
-  color: var(--muted);
-  border-top: 1px solid var(--border);
-  margin-top: 2rem;
+@media (max-width: 600px) {
+  .card-grid { grid-template-columns: 1fr; }
 }
