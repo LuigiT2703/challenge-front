@@ -146,7 +146,52 @@ acaoBtns.forEach(function (btn) {
   });
 });
 
-/* ---- 7. RANKING TABS ---- */
+/* ---- 7. SCROLLSPY — destaca link ativo conforme seção visível ---- */
+(function () {
+  // só roda na index (onde existem seções com ID)
+  var secoes = document.querySelectorAll('section[id]');
+  if (!secoes.length) return;
+
+  var links = document.querySelectorAll('.nav-links a');
+
+  function ativarLink(id) {
+    links.forEach(function (a) {
+      a.classList.remove('nav-ativo');
+      // compara o final do href com "#id"
+      if (a.getAttribute('href') === '#' + id ||
+          a.getAttribute('href').endsWith('#' + id)) {
+        a.classList.add('nav-ativo');
+      }
+    });
+  }
+
+  // se estiver no topo da página, ativa "Início"
+  function ativarInicio() {
+    links.forEach(function (a) { a.classList.remove('nav-ativo'); });
+    var linkInicio = document.querySelector('.nav-links a[href="index.html"], .nav-links a[href="../index.html"], .nav-links a[href="./index.html"]');
+    if (linkInicio) linkInicio.classList.add('nav-ativo');
+  }
+
+  var spyObs = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        ativarLink(entry.target.id);
+      }
+    });
+  }, {
+    rootMargin: '-40% 0px -55% 0px', // dispara quando a seção cruza o centro da tela
+    threshold: 0
+  });
+
+  secoes.forEach(function (s) { spyObs.observe(s); });
+
+  // volta pro "Início" quando está no topo (hero visível)
+  window.addEventListener('scroll', function () {
+    if (window.scrollY < 80) ativarInicio();
+  }, { passive: true });
+})();
+
+/* ---- 8. RANKING TABS ---- */
 var tabBtns = document.querySelectorAll('.tab-btn');
 
 tabBtns.forEach(function (btn) {
