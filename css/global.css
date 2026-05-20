@@ -82,3 +82,16 @@ span {
   margin-top: 4rem;
 }
 
+/* gradiente aplicado em texto inline (ex: integrantes.html) */
+.gradiente-efeito {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
