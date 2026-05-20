@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard — SoulUp</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a class="nav-logo" href="../index.html">🌿 SoulUp</a>
+      <button class="nav-toggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="../index.html#como-funciona">Como Funciona</a></li>
+        <li><a href="ranking.html">Ranking</a></li>
+        <li><a href="../index.html#recompensas">Recompensas</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+      <a href="dashboard.html" class="nav-cta">Começar Agora</a>
+    </div>
+  </nav>
+
+  <div class="dash-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-perfil">
+        <div class="avatar">🌿</div>
+        <strong>João Silva</strong>
+        <small>joao@email.com</small>
+        <div class="nivel-badge">Nível 5 — Eco Guerreiro</div>
+        <div class="pontos-total">
+          <span>Pontos totais</span>
+          <strong class="dash-total-pts">1.240</strong>
+        </div>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="dashboard.html" class="ativo">🏠 Dashboard</a>
+        <a href="ranking.html">🏆 Ranking</a>
+        <a href="faq.html">❓ Ajuda</a>
+        <a href="contato.html">📬 Contato</a>
+        <a href="integrantes.html">👥 Equipe</a>
+      </nav>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="dash-main">
+
+      <div class="dash-welcome fade-in">
+        <div>
+          <h2>Olá, João! 🌱</h2>
+          <p>Você está no Top 12 este mês. Continue assim!</p>
+        </div>
+        <div class="pos-badge">🏆 #12 no ranking</div>
+      </div>
+
+      <!-- Stats -->
+      <div class="dash-stats">
+        <div class="dash-stat fade-in">
+          <div class="stat-icon">⭐</div>
+          <strong class="dash-total-pts">1.240</strong>
+          <span>Pontos este mês</span>
+        </div>
+        <div class="dash-stat fade-in">
+          <div class="stat-icon">📊</div>
+          <strong>#12</strong>
+          <span>Posição no ranking</span>
+        </div>
+        <div class="dash-stat fade-in">
+          <div class="stat-icon">🔥</div>
+          <strong>7</strong>
+          <span>Dias em sequência</span>
+        </div>
+        <div class="dash-stat fade-in">
+          <div class="stat-icon">✅</div>
+          <strong>34</strong>
+          <span>Ações este mês</span>
+        </div>
+      </div>
+
+      <div class="dash-row">
+
+        <!-- Nível -->
+        <div class="dash-card fade-in">
+          <h3>🎯 Progresso de Nível</h3>
+          <div class="level-info">
+            <span>Eco Guerreiro</span>
+            <span>Guardião Verde</span>
+          </div>
+          <div class="level-bar"><div class="level-fill"></div></div>
+          <p class="level-pts">1.240 / 2.000 pts — faltam 760 pts</p>
+        </div>
+
+        <!-- Registrar ação -->
+        <div class="dash-card fade-in">
+          <h3>⚡ Registrar Ação Rápida</h3>
+          <div class="acoes-grid">
+            <button class="acao-btn" data-pts="50" data-nome="♻️ Reciclar">
+              <span class="a-icon">♻️</span>Reciclar<span class="a-pts">+50 pts</span>
+            </button>
+            <button class="acao-btn" data-pts="30" data-nome="⚡ Energia">
+              <span class="a-icon">⚡</span>Energia<span class="a-pts">+30 pts</span>
+            </button>
+            <button class="acao-btn" data-pts="25" data-nome="💧 Água">
+              <span class="a-icon">💧</span>Água<span class="a-pts">+25 pts</span>
+            </button>
+            <button class="acao-btn" data-pts="40" data-nome="🚲 Bike">
+              <span class="a-icon">🚲</span>Bike<span class="a-pts">+40 pts</span>
+            </button>
+            <button class="acao-btn" data-pts="35" data-nome="🌳 Plantar">
+              <span class="a-icon">🌳</span>Plantar<span class="a-pts">+35 pts</span>
+            </button>
+            <button class="acao-btn" data-pts="20" data-nome="🛒 Consumo">
+              <span class="a-icon">🛒</span>Consumo<span class="a-pts">+20 pts</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="dash-row">
+
+        <!-- Feed de atividades -->
+        <div class="dash-card fade-in">
+          <h3>📋 Atividades Recentes</h3>
+          <div class="feed-lista">
+            <div class="feed-item"><span class="feed-icon">♻️</span><span class="f-desc">Reciclagem seletiva</span><span class="f-time">Hoje, 09h</span><span class="f-pts">+50</span></div>
+            <div class="feed-item"><span class="feed-icon">🚲</span><span class="f-desc">Usou bicicleta</span><span class="f-time">Hoje, 07h</span><span class="f-pts">+40</span></div>
+            <div class="feed-item"><span class="feed-icon">💧</span><span class="f-desc">Banho curto</span><span class="f-time">Ontem, 19h</span><span class="f-pts">+25</span></div>
+            <div class="feed-item"><span class="feed-icon">⚡</span><span class="f-desc">Economizou energia</span><span class="f-time">Ontem, 18h</span><span class="f-pts">+30</span></div>
+            <div class="feed-item"><span class="feed-icon">🛒</span><span class="f-desc">Compra consciente</span><span class="f-time">Há 2 dias</span><span class="f-pts">+20</span></div>
+          </div>
+        </div>
+
+        <!-- Badges -->
+        <div class="dash-card fade-in">
+          <h3>🏅 Conquistas</h3>
+          <div class="badges-grid">
+            <div class="badge-item desbloqueado"><span class="b-icon">🌱</span>Primeiro Passo</div>
+            <div class="badge-item desbloqueado"><span class="b-icon">🔥</span>7 Dias Seguidos</div>
+            <div class="badge-item desbloqueado"><span class="b-icon">♻️</span>Mestre Reciclagem</div>
+            <div class="badge-item desbloqueado"><span class="b-icon">⚡</span>Eco Iniciante</div>
+            <div class="badge-item"><span class="b-icon">🏆</span>Top 10</div>
+            <div class="badge-item"><span class="b-icon">🌳</span>Guardião Verde</div>
+            <div class="badge-item"><span class="b-icon">💎</span>Elite Sustentável</div>
+            <div class="badge-item"><span class="b-icon">🥇</span>Campeão do Mês</div>
+          </div>
+        </div>
+
+      </div>
+
+    </main>
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

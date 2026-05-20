@@ -1,0 +1,84 @@
+.sobre-hero {
+  background: var(--gradient);
+  padding: 80px 24px;
+  text-align: center;
+}
+.sobre-hero h1 { color: #fff; font-size: 2.5rem; }
+.sobre-hero p  { color: rgba(255,255,255,.85); font-size: 1.05rem; margin-top: .5rem; max-width: 560px; margin-inline: auto; }
+
+/* ── MVV ── */
+.mvv-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1.5rem;
+}
+.mvv-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+.mvv-card .mvv-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+.mvv-card h3 { margin-bottom: .6rem; }
+
+/* ── História ── */
+.historia-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+.historia-img {
+  background: var(--gradient);
+  border-radius: var(--radius-md);
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+}
+
+/* ── Impacto ── */
+.impacto-grid {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 1.5rem;
+}
+.impacto-card {
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: var(--radius-md);
+  padding: 2rem 1rem;
+  text-align: center;
+}
+.impacto-card strong { display: block; font: 700 2rem var(--font); color: var(--green); margin-bottom: .4rem; }
+.impacto-card span   { font-size: .88rem; color: rgba(255,255,255,.65); }
+
+/* ── Parceiro ── */
+.parceiro-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 3rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.parceiro-logo {
+  width: 100px; height: 100px;
+  border-radius: var(--radius-md);
+  background: var(--gradient);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 3rem;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .mvv-grid      { grid-template-columns: 1fr; }
+  .historia-grid { grid-template-columns: 1fr; }
+  .impacto-grid  { grid-template-columns: repeat(2,1fr); }
+  .parceiro-card { flex-direction: column; text-align: center; }
+}

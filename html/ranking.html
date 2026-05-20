@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ranking — SoulUp</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/ranking.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a class="nav-logo" href="../index.html">🌿 SoulUp</a>
+      <button class="nav-toggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="../index.html#como-funciona">Como Funciona</a></li>
+        <li><a href="ranking.html" class="ativo">Ranking</a></li>
+        <li><a href="../index.html#recompensas">Recompensas</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+      <a href="dashboard.html" class="nav-cta">Começar Agora</a>
+    </div>
+  </nav>
+
+  <header class="ranking-hero">
+    <span class="chip">Competição Mensal</span>
+    <h1>🏆 Ranking Global SoulUp</h1>
+    <p>Os campeões da sustentabilidade — maio 2025</p>
+  </header>
+
+  <main class="section">
+    <div class="container">
+
+      <!-- Countdown -->
+      <div class="countdown-bar fade-in">
+        <p>⏱️ Ranking fecha em:</p>
+        <div class="countdown-nums">
+          <div class="cd-box"><strong id="cd-dias">18</strong><span>Dias</span></div>
+          <div class="cd-box"><strong id="cd-horas">14</strong><span>Horas</span></div>
+          <div class="cd-box"><strong id="cd-min">32</strong><span>Min</span></div>
+          <div class="cd-box"><strong id="cd-seg">00</strong><span>Seg</span></div>
+        </div>
+      </div>
+
+      <!-- Tabs -->
+      <div class="tabs-wrap">
+        <button class="tab-btn ativo">Geral</button>
+        <button class="tab-btn">Reciclagem</button>
+        <button class="tab-btn">Energia</button>
+        <button class="tab-btn">Água</button>
+        <button class="tab-btn">Transporte</button>
+      </div>
+
+      <!-- Pódio -->
+      <div class="podium-wrap">
+        <div class="podium-box p2 fade-in">
+          <div class="podium-medal">🥈</div>
+          <span class="podium-pos">#2</span>
+          <span class="podium-nome">Bruno Lima</span>
+          <span class="podium-cidade">Rio de Janeiro, RJ</span>
+          <span class="pts-chip">4.310 pts</span>
+        </div>
+        <div class="podium-box p1 fade-in">
+          <div class="podium-medal">🥇</div>
+          <span class="podium-pos">#1</span>
+          <span class="podium-nome">Ana Costa</span>
+          <span class="podium-cidade">São Paulo, SP</span>
+          <span class="pts-chip">4.820 pts</span>
+        </div>
+        <div class="podium-box p3 fade-in">
+          <div class="podium-medal">🥉</div>
+          <span class="podium-pos">#3</span>
+          <span class="podium-nome">Carla Mendes</span>
+          <span class="podium-cidade">Belo Horizonte, MG</span>
+          <span class="pts-chip">3.980 pts</span>
+        </div>
+      </div>
+
+      <!-- Tabela -->
+      <table class="ranking-table fade-in">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Usuário</th>
+            <th>Cidade</th>
+            <th>Ações</th>
+            <th>Pontos</th>
+            <th>Tendência</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><span class="pos-num top">4</span></td><td><div class="user-info"><div class="user-avatar">🌿</div>Diego Rocha</div></td><td>Curitiba, PR</td><td>89</td><td><strong>3.750 pts</strong></td><td class="tend-up">↑ +2</td></tr>
+          <tr><td><span class="pos-num top">5</span></td><td><div class="user-info"><div class="user-avatar">🌿</div>Marina Santos</div></td><td>Porto Alegre, RS</td><td>76</td><td><strong>3.420 pts</strong></td><td class="tend-eq">→ =</td></tr>
+          <tr><td><span class="pos-num">6</span></td><td><div class="user-info"><div class="user-avatar">🌿</div>Rafael Oliveira</div></td><td>Fortaleza, CE</td><td>71</td><td><strong>3.180 pts</strong></td><td class="tend-up">↑ +1</td></tr>
+          <tr><td><span class="pos-num">7</span></td><td><div class="user-info"><div class="user-avatar">🌿</div>Juliana Ferreira</div></td><td>Salvador, BA</td><td>68</td><td><strong>2.940 pts</strong></td><td class="tend-down">↓ -1</td></tr>
+          <tr><td><span class="pos-num">8</span></td><td><div class="user-info"><div class="user-avatar">🌿</div>Pedro Alves</div></td><td>Recife, PE</td><td>65</td><td><strong>2.810 pts</strong></td><td class="tend-up">↑ +3</td></tr>
+          <tr><td><span class="pos-num">9</span></td><td><div class="user-info"><div class="user-avatar">🌿</div>Camila Souza</div></td><td>Brasília, DF</td><td>60</td><td><strong>2.650 pts</strong></td><td class="tend-eq">→ =</td></tr>
+          <tr><td><span class="pos-num">10</span></td><td><div class="user-info"><div class="user-avatar">🌿</div>Lucas Mendes</div></td><td>Manaus, AM</td><td>57</td><td><strong>2.430 pts</strong></td><td class="tend-down">↓ -2</td></tr>
+          <tr><td><span class="pos-num">11</span></td><td><div class="user-info"><div class="user-avatar">🌿</div>Isabela Lima</div></td><td>Goiânia, GO</td><td>52</td><td><strong>2.280 pts</strong></td><td class="tend-up">↑ +1</td></tr>
+          <tr class="minha-linha"><td><span class="pos-num top">12</span></td><td><div class="user-info"><div class="user-avatar">🌿</div>João Silva (você)</div></td><td>São Paulo, SP</td><td>34</td><td><strong>1.240 pts</strong></td><td class="tend-up">↑ +4</td></tr>
+          <tr><td><span class="pos-num">13</span></td><td><div class="user-info"><div class="user-avatar">🌿</div>Fernanda Costa</div></td><td>Florianópolis, SC</td><td>30</td><td><strong>1.180 pts</strong></td><td class="tend-eq">→ =</td></tr>
+        </tbody>
+      </table>
+
+      <!-- Prêmios -->
+      <span class="section-label" style="display:block;text-align:center">RECOMPENSAS DO MÊS</span>
+      <h2 class="section-title" style="text-align:center">Prêmios para os melhores</h2>
+      <div class="prizes-grid">
+        <div class="prize-card p1 fade-in">
+          <div class="prize-icon">🥇</div>
+          <h3>1º Lugar</h3>
+          <p>Subsídio de <strong>R$200</strong> na conta de energia elétrica + Certificado Digital</p>
+        </div>
+        <div class="prize-card p2 fade-in">
+          <div class="prize-icon">🥈</div>
+          <h3>2º Lugar</h3>
+          <p>Subsídio de <strong>R$100</strong> na conta de energia + Vouchers em parceiros</p>
+        </div>
+        <div class="prize-card p3 fade-in">
+          <div class="prize-icon">🥉</div>
+          <h3>3º Lugar</h3>
+          <p>Subsídio de <strong>R$50</strong> na conta de energia + Certificado Digital</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="footer-logo">🌿 SoulUp</span>
+          <p>Transforme hábitos em impacto real. Ganhe pontos, suba no ranking e concorra a recompensas sustentáveis.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="LinkedIn">💼</a>
+            <a href="https://github.com/LuigiT2703" target="_blank" aria-label="GitHub">💻</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Páginas</h4>
+          <ul>
+            <li><a href="../index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Plataforma</h4>
+          <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="ranking.html">Ranking</a></li>
+            <li><a href="integrantes.html">Integrantes</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Prospera</h4>
+          <ul>
+            <li><a href="sobre.html">Sobre o Parceiro</a></li>
+            <li><a href="contato.html">Fale Conosco</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 SoulUp — Programa Prospera · FIAP · 1TDSPG · Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script>
+    function atualizarContagem() {
+      var fim = new Date();
+      fim.setDate(fim.getDate() + 18);
+      fim.setHours(fim.getHours() + 14);
+      var agora = new Date();
+      var diff  = fim - agora;
+      if (diff <= 0) return;
+      var dias  = Math.floor(diff / 86400000);
+      var horas = Math.floor((diff % 86400000) / 3600000);
+      var min   = Math.floor((diff % 3600000) / 60000);
+      var seg   = Math.floor((diff % 60000) / 1000);
+      document.getElementById('cd-dias').textContent  = String(dias).padStart(2,'0');
+      document.getElementById('cd-horas').textContent = String(horas).padStart(2,'0');
+      document.getElementById('cd-min').textContent   = String(min).padStart(2,'0');
+      document.getElementById('cd-seg').textContent   = String(seg).padStart(2,'0');
+    }
+    atualizarContagem();
+    setInterval(atualizarContagem, 1000);
+  </script>
+</body>
+</html>
