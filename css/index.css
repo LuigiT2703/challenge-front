@@ -30,7 +30,7 @@
 
 /* HERO */
 .hero {
-  background-image:url(../img/imagem\ de\ fundo.png) ;
+  background-image:url(/img/floresta.png);
   padding: 96px 24px 80px;
   text-align: center;
 }
