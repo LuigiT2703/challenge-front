@@ -1,5 +1,9 @@
 .ranking-hero {
-  background: var(--gradient);
+  background-image: url(/img/trofeu\ 3\ png.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 280px;
   padding: 80px 24px 60px;
   text-align: center;
 }
