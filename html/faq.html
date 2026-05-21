@@ -1,179 +1,187 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ â€” SoulUp</title>
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/faq.css">
-    <script src="../js/nav.js" defer></script>n    <script src="../js/faq.js" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ — SoulUp</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/faq.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-    <nav class="navbar">
-        <div class="nav-container">
-            <a class="nav-logo" href="../index.html">ðŸŒ¿ SoulUp</a>
-            <button class="nav-botao" aria-label="Abrir menu">
-                <span></span><span></span><span></span>
-            </button>
-            <ul class="nav-links">
-                <li><a href="../index.html">InÃ­cio</a></li>
-                <li><a href="../index.html#como-funciona">Como Funciona</a></li>
-                <li><a href="./ranking.html">Ranking</a></li>
-                <li><a href="../index.html#recompensas">Recompensas</a></li>
-                <li><a href="./faq.html" class="nav-ativo">FAQ</a></li>
-                <li><a href="./contato.html">Contato</a></li>
-            </ul>
-            <a href="./dashboard.html" class="nav-comecar">ComeÃ§ar Agora</a>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a class="nav-logo" href="../index.html">🌿 SoulUp</a>
+      <button class="nav-botao" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="../index.html#como-funciona">Como Funciona</a></li>
+        <li><a href="./ranking.html">Ranking</a></li>
+        <li><a href="../index.html#recompensas">Recompensas</a></li>
+        <li><a href="./faq.html" class="nav-ativo">FAQ</a></li>
+        <li><a href="./contato.html">Contato</a></li>
+      </ul>
+      <a href="./dashboard.html" class="nav-comecar">Começar Agora</a>
+    </div>
+  </nav>
+
+  <header class="faq-hero">
+    <span class="chip">Dúvidas</span>
+    <h1>Perguntas Frequentes</h1>
+    <p>Encontre respostas para as principais dúvidas sobre o SoulUp.</p>
+    <div class="faq-busca">
+      <span class="busca-icon">🔍</span>
+      <input type="text" id="buscaFaq" placeholder="Buscar pergunta..." aria-label="Buscar pergunta">
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="faq-lista" id="faqLista">
+
+        <div class="faq-item fade-in">
+          <button class="faq-pergunta">
+            O que é o SoulUp?
+            <span class="faq-chevron">▼</span>
+          </button>
+          <div class="faq-resposta">
+            <p>O SoulUp é uma plataforma de gamificação sustentável onde você registra ações ecológicas do dia a dia, acumula pontos e compete em rankings mensais para ganhar recompensas reais — incluindo subsídios na conta de energia elétrica.</p>
+          </div>
         </div>
-    </nav>
-    <header class="faq-hero">
-        <span class="chip">DÃºvidas</span>
-        <h1>Perguntas Frequentes</h1>
-        <p>Encontre respostas para as principais dÃºvidas sobre o SoulUp.</p>
-        <div class="faq-busca">
-            <span class="busca-icon">ðŸ”</span>
-            <input type="text" id="buscaFaq" placeholder="Buscar pergunta..." aria-label="Buscar pergunta">
+
+        <div class="faq-item fade-in">
+          <button class="faq-pergunta">
+            Como faço para me cadastrar?
+            <span class="faq-chevron">▼</span>
+          </button>
+          <div class="faq-resposta">
+            <p>Clique no botão "Começar Agora" no topo da página, preencha o formulário com seus dados pessoais e crie uma senha. Após confirmar seu e-mail, você já pode acessar sua conta e registrar suas ações sustentáveis.</p>
+          </div>
         </div>
-    </header>
-    <main class="section">
-        <div class="container">
-            <div class="faq-lista" id="faqLista">
 
-                <div class="faq-item fade-in">
-                    <button class="faq-pergunta">O que Ã© o SoulUp? <span class="faq-chevron">â–¼</span></button>
-                    <div class="faq-resposta">
-                        <p>O SoulUp Ã© uma plataforma de gamificaÃ§Ã£o sustentÃ¡vel onde vocÃª registra aÃ§Ãµes ecolÃ³gicas do
-                            dia a dia, acumula pontos e compete em rankings mensais para ganhar recompensas reais â€”
-                            incluindo subsÃ­dios na conta de energia elÃ©trica.</p>
-                    </div>
-
-                </div>
-                <div class="faq-item fade-in">
-                    <button class="faq-pergunta">Como faÃ§o para me cadastrar? <span
-                            class="faq-chevron">â–¼</span></button>
-                    <div class="faq-resposta">
-                        <p>Para se cadastrar, clique no botÃ£o "ComeÃ§ar Agora" no topo da pÃ¡gina, preencha o formulÃ¡rio
-                            de registro com seus dados pessoais e crie uma senha. ApÃ³s confirmar seu email, vocÃª poderÃ¡
-                            acessar sua conta e comeÃ§ar a registrar suas aÃ§Ãµes sustentÃ¡veis.</p>
-                    </div>
-
-                    <div class="faq-item fade-in">
-                        <button class="faq-pergunta">Como registro minhas aÃ§Ãµes sustentÃ¡veis? <span
-                                class="faq-chevron">â–¼</span></button>
-                        <div class="faq-resposta">
-                            <p>No seu Dashboard, hÃ¡ uma seÃ§Ã£o de "Registro RÃ¡pido" com botÃµes para cada categoria de
-                                aÃ§Ã£o (reciclagem, energia, Ã¡gua, transporte, etc.). Basta clicar na aÃ§Ã£o realizada e os
-                                pontos sÃ£o adicionados automaticamente.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item fade-in">
-                        <button class="faq-pergunta">Como funciona o sistema de pontos? <span
-                                class="faq-chevron">â–¼</span></button>
-                        <div class="faq-resposta">
-                            <p>Cada categoria de aÃ§Ã£o tem uma pontuaÃ§Ã£o associada: reciclagem (atÃ© 80 pts), energia (atÃ©
-                                60 pts), Ã¡gua (atÃ© 50 pts), transporte (atÃ© 70 pts), verde urbano (atÃ© 100 pts) e
-                                consumo consciente (atÃ© 40 pts). Os pontos acumulam mensalmente.
-                            <p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item fade-in">
-                        <button class="faq-pergunta">Como funciona o subsÃ­dio na conta de energia? <span
-                                class="faq-chevron">â–¼</span></button>
-                        <div class="faq-resposta">
-                            <p>Ao final de cada mÃªs, o ranking Ã© fechado e os 3 primeiros colocados recebem: 1Âº lugar
-                                R$200, 2Âº lugar R$100 e 3Âº lugar R$50 de desconto direto na conta de energia, em
-                                parceria com o Programa Prospera.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item fade-in">
-                        <button class="faq-pergunta">Quem pode participar? <span class="faq-chevron">â–¼</span></button>
-                        <div class="faq-resposta">
-                            <p>Qualquer pessoa com acesso Ã  internet pode participar. A plataforma Ã© aberta a todos os
-                                cidadÃ£os brasileiros que queiram adotar hÃ¡bitos mais sustentÃ¡veis e concorrer Ã s
-                                recompensas.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item fade-in">
-                        <button class="faq-pergunta">As aÃ§Ãµes registradas sÃ£o verificadas? <span
-                                class="faq-chevron">â–¼</span></button>
-                        <div class="faq-resposta">
-                            <p>Atualmente o sistema funciona com base na honestidade dos usuÃ¡rios. Estamos desenvolvendo
-                                um sistema de verificaÃ§Ã£o por fotos e geolocalizaÃ§Ã£o para futuras versÃµes da plataforma.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item fade-in">
-                        <button class="faq-pergunta">Posso perder pontos? <span class="faq-chevron">â–¼</span></button>
-                        <div class="faq-resposta">
-                            <p>NÃ£o â€” pontos nunca sÃ£o removidos. PorÃ©m, o ranking mensal Ã© zerado a cada novo mÃªs, entÃ£o
-                                todos comeÃ§am do zero nas competiÃ§Ãµes mensais. Seus pontos totais acumulados no perfil
-                                sÃ£o permanentes.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item fade-in">
-                        <button class="faq-pergunta">Como funciona o ranking mensal? <span
-                                class="faq-chevron">â–¼</span></button>
-                        <div class="faq-resposta">
-                            <p>O ranking mensal contabiliza os pontos acumulados durante o mÃªs corrente. No Ãºltimo dia
-                                do mÃªs Ã© realizado o fechamento, os vencedores sÃ£o anunciados e o ranking Ã© reiniciado
-                                para o prÃ³ximo perÃ­odo.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item fade-in">
-                        <button class="faq-pergunta">O SoulUp Ã© gratuito? <span class="faq-chevron">â–¼</span></button>
-                        <div class="faq-resposta">
-                            <p>Sim! O SoulUp Ã© 100% gratuito para todos os usuÃ¡rios. Nossa missÃ£o Ã© democratizar a
-                                sustentabilidade e tornÃ¡-la acessÃ­vel para todos, sem nenhum custo.</p>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="faq-cta fade-in">
-                    <h3>Ainda tem dÃºvidas?</h3>
-                    <p>Nossa equipe estÃ¡ pronta para te ajudar. Entre em contato e responderemos em atÃ© 24h.</p>
-                    <a href="./contato.html" class="btn btn-primary">Fale Conosco â†’</a>
-                </div>
-            </div>
-    </main>
-
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-marca">
-                <a href="../index.html" class="footer-logo">ðŸŒ¿ SoulUp</a>
-                <p>Transforme hÃ¡bitos em impacto. Ganhe pontos por aÃ§Ãµes sustentÃ¡veis e concorra a subsÃ­dios reais na sua conta de energia.</p>
-            </div>
-            <div class="footer-col">
-                <h4>NavegaÃ§Ã£o</h4>
-                <ul>
-                    <li><a href="./sobre.html">Sobre</a></li>
-                    <li><a href="./integrantes.html">Integrantes</a></li>
-                    <li><a href="./faq.html">FAQ</a></li>
-                    <li><a href="./contato.html">Contato</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Siga-nos</h4>
-                <div class="footer-redes">
-                    <a href="https://github.com/LuigiT2703" target="_blank" class="footer-rede">GitHub</a>
-                    <a href="https://linkedin.com" target="_blank" class="footer-rede">LinkedIn</a>
-                </div>
-            </div>
+        <div class="faq-item fade-in">
+          <button class="faq-pergunta">
+            Como registro minhas ações sustentáveis?
+            <span class="faq-chevron">▼</span>
+          </button>
+          <div class="faq-resposta">
+            <p>No seu Dashboard há uma seção de "Registro Rápido" com botões para cada categoria de ação (reciclagem, energia, água, transporte, etc.). Basta clicar na ação realizada e os pontos são adicionados automaticamente.</p>
+          </div>
         </div>
-        <div class="footer-bottom">
-            <p>Â© 2025 SoulUp â€” Programa Prospera. Todos os direitos reservados.</p>
+
+        <div class="faq-item fade-in">
+          <button class="faq-pergunta">
+            Como funciona o sistema de pontos?
+            <span class="faq-chevron">▼</span>
+          </button>
+          <div class="faq-resposta">
+            <p>Cada categoria tem uma pontuação associada: reciclagem (até 80 pts), energia (até 60 pts), água (até 50 pts), transporte (até 70 pts), verde urbano (até 100 pts) e consumo consciente (até 40 pts). Os pontos acumulam mensalmente.</p>
+          </div>
         </div>
-    </footer>
+
+        <div class="faq-item fade-in">
+          <button class="faq-pergunta">
+            Como funciona o subsídio na conta de energia?
+            <span class="faq-chevron">▼</span>
+          </button>
+          <div class="faq-resposta">
+            <p>Ao final de cada mês, o ranking é fechado e os 3 primeiros colocados recebem: 1º lugar R$ 200, 2º lugar R$ 100 e 3º lugar R$ 50 de desconto direto na conta de energia, em parceria com o Programa Prospera.</p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-in">
+          <button class="faq-pergunta">
+            Quem pode participar?
+            <span class="faq-chevron">▼</span>
+          </button>
+          <div class="faq-resposta">
+            <p>Qualquer pessoa com acesso à internet pode participar. A plataforma é aberta a todos os cidadãos brasileiros que queiram adotar hábitos mais sustentáveis e concorrer às recompensas.</p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-in">
+          <button class="faq-pergunta">
+            As ações registradas são verificadas?
+            <span class="faq-chevron">▼</span>
+          </button>
+          <div class="faq-resposta">
+            <p>Atualmente o sistema funciona com base na honestidade dos usuários. Estamos desenvolvendo um sistema de verificação por fotos e geolocalização para versões futuras da plataforma.</p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-in">
+          <button class="faq-pergunta">
+            Posso perder pontos?
+            <span class="faq-chevron">▼</span>
+          </button>
+          <div class="faq-resposta">
+            <p>Não — pontos nunca são removidos. Porém, o ranking mensal é zerado a cada novo mês, então todos começam do zero nas competições mensais. Seus pontos totais acumulados no perfil são permanentes.</p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-in">
+          <button class="faq-pergunta">
+            Como funciona o ranking mensal?
+            <span class="faq-chevron">▼</span>
+          </button>
+          <div class="faq-resposta">
+            <p>O ranking mensal contabiliza os pontos acumulados durante o mês corrente. No último dia do mês é realizado o fechamento, os vencedores são anunciados e o ranking é reiniciado para o próximo período.</p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-in">
+          <button class="faq-pergunta">
+            O SoulUp é gratuito?
+            <span class="faq-chevron">▼</span>
+          </button>
+          <div class="faq-resposta">
+            <p>Sim! O SoulUp é 100% gratuito para todos os usuários. Nossa missão é democratizar a sustentabilidade e torná-la acessível para todos, sem nenhum custo.</p>
+          </div>
+        </div>
+
+        <div class="faq-cta fade-in">
+          <h3>Ainda tem dúvidas?</h3>
+          <p>Nossa equipe está pronta para te ajudar. Entre em contato e responderemos em até 24h.</p>
+          <a href="./contato.html" class="btn btn-primary">Fale Conosco →</a>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-marca">
+        <a href="../index.html" class="footer-logo">🌿 SoulUp</a>
+        <p>Transforme hábitos em impacto. Ganhe pontos por ações sustentáveis e concorra a subsídios reais na sua conta de energia.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="./sobre.html">Sobre</a></li>
+          <li><a href="./integrantes.html">Integrantes</a></li>
+          <li><a href="./faq.html">FAQ</a></li>
+          <li><a href="./contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Siga-nos</h4>
+        <div class="footer-redes">
+          <a href="https://github.com/LuigiT2703" target="_blank" class="footer-rede">GitHub</a>
+          <a href="https://linkedin.com" target="_blank" class="footer-rede">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 SoulUp — Programa Prospera. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="../js/nav.js" defer></script>
+  <script src="../js/fade.js" defer></script>
+  <script src="../js/faq.js" defer></script>
 </body>
-
 </html>
