@@ -109,8 +109,8 @@
       </table>
 
       <!-- Prêmios -->
-      <span class="section-label" style="display:block;text-align:center">RECOMPENSAS DO MÊS</span>
-      <h2 class="section-title" style="text-align:center">Prêmios para os melhores</h2>
+      <span class="section-label">RECOMPENSAS DO MÊS</span>
+      <h2 class="section-title">Prêmios para os melhores</h2>
       <div class="prizes-grid">
         <div class="prize-card p1 fade-in">
           <div class="prize-icon">🥇</div>
@@ -160,26 +160,10 @@
     </div>
   </footer>
 
-  <script src="../js/main.js"></script>
-  <script>
-    function atualizarContagem() {
-      var fim = new Date();
-      fim.setDate(fim.getDate() + 18);
-      fim.setHours(fim.getHours() + 14);
-      var agora = new Date();
-      var diff  = fim - agora;
-      if (diff <= 0) return;
-      var dias  = Math.floor(diff / 86400000);
-      var horas = Math.floor((diff % 86400000) / 3600000);
-      var min   = Math.floor((diff % 3600000) / 60000);
-      var seg   = Math.floor((diff % 60000) / 1000);
-      document.getElementById('cd-dias').textContent  = String(dias).padStart(2,'0');
-      document.getElementById('cd-horas').textContent = String(horas).padStart(2,'0');
-      document.getElementById('cd-min').textContent   = String(min).padStart(2,'0');
-      document.getElementById('cd-seg').textContent   = String(seg).padStart(2,'0');
-    }
-    atualizarContagem();
-    setInterval(atualizarContagem, 1000);
-  </script>
+  <script src="../js/nav.js" defer></script>
+  <script src="../js/fade.js" defer></script>
+  <script src="../js/nav.js" defer></script>
+  <script src="../js/fade.js" defer></script>
+  <script src="../js/ranking.js" defer></script>
 </body>
 </html>

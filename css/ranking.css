@@ -162,3 +162,20 @@
   .ranking-table td:nth-child(4),
   .ranking-table th:nth-child(4) { display: none; }
 }
+
+/* ── Labels de prêmios ── */
+.section-label {
+  display: block;
+  text-align: center;
+  font: 600 .75rem var(--font);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--green);
+  margin-bottom: .5rem;
+}
+.section-title {
+  text-align: center;
+  font: 700 1.75rem var(--font);
+  color: var(--text);
+  margin-bottom: 2rem;
+}

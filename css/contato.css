@@ -80,6 +80,35 @@
 .info-item strong { display: block; font: 600 .95rem var(--font); color: var(--text); margin-bottom: .25rem; }
 .info-item span   { font-size: .88rem; color: var(--muted); }
 
+/* ── Main wrapper ── */
+.contato-main {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 64px 24px;
+}
+
+/* ── Botão submit ── */
+.form-submit {
+  display: block;
+  width: 100%;
+  background: var(--gradient);
+  color: #fff;
+  border: none;
+  padding: 14px 32px;
+  border-radius: var(--radius-full);
+  font: 600 1rem var(--font);
+  cursor: pointer;
+  transition: opacity var(--transition);
+}
+.form-submit:hover { opacity: .88; }
+
+/* ── Label redes ── */
+.redes-label {
+  font: 600 .88rem var(--font);
+  color: var(--text);
+  margin-bottom: .75rem;
+}
+
 .social-links { display: flex; gap: .75rem; flex-wrap: wrap; }
 .social-link {
   display: inline-flex;
