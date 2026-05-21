@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 .faq-hero {
   background: var(--gradient);
   padding: 80px 24px;
@@ -39,7 +39,7 @@
   flex-direction: column;
   gap: .75rem;
 }
-=======
+
 /* ── FAQ Hero ── */
 .faq-hero {
   background: var(--gradient);
@@ -73,6 +73,7 @@
   border-radius: var(--radius-full);
   padding: 10px 20px;
 }
+
 .faq-busca input {
   background: none;
   border: none;
@@ -81,6 +82,7 @@
   color: #fff;
   width: 100%;
 }
+
 .faq-busca input::placeholder { color: rgba(255,255,255,.7); }
 .busca-icon { font-size: 1.1rem; }
 
@@ -91,13 +93,12 @@
 /* ── Itens FAQ ── */
 .faq-lista { display: flex; flex-direction: column; gap: .75rem; }
 
->>>>>>> origin/main
 .faq-item {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
   overflow: hidden;
-<<<<<<< HEAD
+
 }
 .faq-pergunta {
   width: 100%;
@@ -146,9 +147,7 @@
 }
 .faq-cta h3 { margin-bottom: .5rem; }
 .faq-cta p  { margin-bottom: 1.5rem; }
-=======
-  transition: box-shadow var(--transition);
-}
+
 .faq-item:hover { box-shadow: var(--shadow-sm); }
 
 .faq-pergunta {
@@ -195,4 +194,4 @@
 .btn { display: inline-block; padding: 12px 28px; border-radius: var(--radius-full); font: 600 .95rem var(--font); text-decoration: none; transition: opacity var(--transition); }
 .btn-primary { background: var(--gradient); color: #fff; }
 .btn-primary:hover { opacity: .88; }
->>>>>>> origin/main
+
