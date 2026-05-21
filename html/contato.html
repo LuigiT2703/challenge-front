@@ -33,7 +33,7 @@
     <p>Tire suas dúvidas, envie sugestões ou entre em contato com nossa equipe.</p>
   </header>
 
-  <main style="max-width:1120px; margin:0 auto; padding:64px 24px;">
+  <main class="contato-main">
     <div class="contato-grid">
 
       <!-- Formulário -->
@@ -71,18 +71,7 @@
             <span class="form-aviso" id="aviso-mensagem"></span>
           </div>
 
-          <button type="submit" style="
-            display:inline-block;
-            background: var(--gradient);
-            color:#fff;
-            border:none;
-            padding:14px 32px;
-            border-radius:var(--radius-full);
-            font:600 1rem var(--font);
-            cursor:pointer;
-            width:100%;
-            transition:opacity var(--transition);
-          ">Enviar Mensagem →</button>
+          <button type="submit" class="form-submit">Enviar Mensagem →</button>
 
         </form>
       </div>
@@ -123,7 +112,7 @@
         </div>
 
         <div>
-          <p style="font:600 .88rem var(--font); color:var(--text); margin-bottom:.75rem;">Nossas redes</p>
+          <p class="redes-label">Nossas redes</p>
           <div class="social-links">
             <a href="https://github.com/LuigiT2703" target="_blank" class="social-link">💻 GitHub</a>
             <a href="https://linkedin.com" target="_blank" class="social-link">💼 LinkedIn</a>
@@ -163,6 +152,8 @@
     </div>
   </footer>
 
-  <script src="../js/main.js"></script>
+  <script src="../js/nav.js" defer></script>
+  <script src="../js/fade.js" defer></script>
+  <script src="../js/contato.js" defer></script>
 </body>
 </html>
