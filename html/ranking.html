@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ranking — SoulUp</title>
   <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="../css/ranking.css">
+  <script src="../js/nav.js" defer></script>
+  <script src="../js/fade.js" defer></script>
+  <script src="../js/nav.js" defer></script>
+  <script src="../js/fade.js" defer></script>
+  <script src="../js/ranking.js" defer></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
   <nav class="navbar">
@@ -95,16 +102,126 @@
           </tr>
         </thead>
         <tbody>
-          <tr><td><span class="pos-num top">4</span></td><td><div class="user-info"><div class="user-avatar">🌿</div>Diego Rocha</div></td><td>Curitiba, PR</td><td>89</td><td><strong>3.750 pts</strong></td><td class="tend-up">↑ +2</td></tr>
-          <tr><td><span class="pos-num top">5</span></td><td><div class="user-info"><div class="user-avatar">🌿</div>Marina Santos</div></td><td>Porto Alegre, RS</td><td>76</td><td><strong>3.420 pts</strong></td><td class="tend-eq">→ =</td></tr>
-          <tr><td><span class="pos-num">6</span></td><td><div class="user-info"><div class="user-avatar">🌿</div>Rafael Oliveira</div></td><td>Fortaleza, CE</td><td>71</td><td><strong>3.180 pts</strong></td><td class="tend-up">↑ +1</td></tr>
-          <tr><td><span class="pos-num">7</span></td><td><div class="user-info"><div class="user-avatar">🌿</div>Juliana Ferreira</div></td><td>Salvador, BA</td><td>68</td><td><strong>2.940 pts</strong></td><td class="tend-down">↓ -1</td></tr>
-          <tr><td><span class="pos-num">8</span></td><td><div class="user-info"><div class="user-avatar">🌿</div>Pedro Alves</div></td><td>Recife, PE</td><td>65</td><td><strong>2.810 pts</strong></td><td class="tend-up">↑ +3</td></tr>
-          <tr><td><span class="pos-num">9</span></td><td><div class="user-info"><div class="user-avatar">🌿</div>Camila Souza</div></td><td>Brasília, DF</td><td>60</td><td><strong>2.650 pts</strong></td><td class="tend-eq">→ =</td></tr>
-          <tr><td><span class="pos-num">10</span></td><td><div class="user-info"><div class="user-avatar">🌿</div>Lucas Mendes</div></td><td>Manaus, AM</td><td>57</td><td><strong>2.430 pts</strong></td><td class="tend-down">↓ -2</td></tr>
-          <tr><td><span class="pos-num">11</span></td><td><div class="user-info"><div class="user-avatar">🌿</div>Isabela Lima</div></td><td>Goiânia, GO</td><td>52</td><td><strong>2.280 pts</strong></td><td class="tend-up">↑ +1</td></tr>
-          <tr class="minha-linha"><td><span class="pos-num top">12</span></td><td><div class="user-info"><div class="user-avatar">🌿</div>João Silva (você)</div></td><td>São Paulo, SP</td><td>34</td><td><strong>1.240 pts</strong></td><td class="tend-up">↑ +4</td></tr>
-          <tr><td><span class="pos-num">13</span></td><td><div class="user-info"><div class="user-avatar">🌿</div>Fernanda Costa</div></td><td>Florianópolis, SC</td><td>30</td><td><strong>1.180 pts</strong></td><td class="tend-eq">→ =</td></tr>
+          <tr>
+            <td><span class="pos-num top">4</span></td>
+            <td>
+              <div class="user-info">
+                <div class="user-avatar">🌿</div>Diego Rocha
+              </div>
+            </td>
+            <td>Curitiba, PR</td>
+            <td>89</td>
+            <td><strong>3.750 pts</strong></td>
+            <td class="tend-up">↑ +2</td>
+          </tr>
+          <tr>
+            <td><span class="pos-num top">5</span></td>
+            <td>
+              <div class="user-info">
+                <div class="user-avatar">🌿</div>Marina Santos
+              </div>
+            </td>
+            <td>Porto Alegre, RS</td>
+            <td>76</td>
+            <td><strong>3.420 pts</strong></td>
+            <td class="tend-eq">→ =</td>
+          </tr>
+          <tr>
+            <td><span class="pos-num">6</span></td>
+            <td>
+              <div class="user-info">
+                <div class="user-avatar">🌿</div>Rafael Oliveira
+              </div>
+            </td>
+            <td>Fortaleza, CE</td>
+            <td>71</td>
+            <td><strong>3.180 pts</strong></td>
+            <td class="tend-up">↑ +1</td>
+          </tr>
+          <tr>
+            <td><span class="pos-num">7</span></td>
+            <td>
+              <div class="user-info">
+                <div class="user-avatar">🌿</div>Juliana Ferreira
+              </div>
+            </td>
+            <td>Salvador, BA</td>
+            <td>68</td>
+            <td><strong>2.940 pts</strong></td>
+            <td class="tend-down">↓ -1</td>
+          </tr>
+          <tr>
+            <td><span class="pos-num">8</span></td>
+            <td>
+              <div class="user-info">
+                <div class="user-avatar">🌿</div>Pedro Alves
+              </div>
+            </td>
+            <td>Recife, PE</td>
+            <td>65</td>
+            <td><strong>2.810 pts</strong></td>
+            <td class="tend-up">↑ +3</td>
+          </tr>
+          <tr>
+            <td><span class="pos-num">9</span></td>
+            <td>
+              <div class="user-info">
+                <div class="user-avatar">🌿</div>Camila Souza
+              </div>
+            </td>
+            <td>Brasília, DF</td>
+            <td>60</td>
+            <td><strong>2.650 pts</strong></td>
+            <td class="tend-eq">→ =</td>
+          </tr>
+          <tr>
+            <td><span class="pos-num">10</span></td>
+            <td>
+              <div class="user-info">
+                <div class="user-avatar">🌿</div>Lucas Mendes
+              </div>
+            </td>
+            <td>Manaus, AM</td>
+            <td>57</td>
+            <td><strong>2.430 pts</strong></td>
+            <td class="tend-down">↓ -2</td>
+          </tr>
+          <tr>
+            <td><span class="pos-num">11</span></td>
+            <td>
+              <div class="user-info">
+                <div class="user-avatar">🌿</div>Isabela Lima
+              </div>
+            </td>
+            <td>Goiânia, GO</td>
+            <td>52</td>
+            <td><strong>2.280 pts</strong></td>
+            <td class="tend-up">↑ +1</td>
+          </tr>
+          <tr class="minha-linha">
+            <td><span class="pos-num top">12</span></td>
+            <td>
+              <div class="user-info">
+                <div class="user-avatar">🌿</div>João Silva (você)
+              </div>
+            </td>
+            <td>São Paulo, SP</td>
+            <td>34</td>
+            <td><strong>1.240 pts</strong></td>
+            <td class="tend-up">↑ +4</td>
+          </tr>
+          <tr>
+            <td><span class="pos-num">13</span></td>
+            <td>
+              <div class="user-info">
+                <div class="user-avatar">🌿</div>Fernanda Costa
+              </div>
+            </td>
+            <td>Florianópolis, SC</td>
+            <td>30</td>
+            <td><strong>1.180 pts</strong></td>
+            <td class="tend-eq">→ =</td>
+          </tr>
         </tbody>
       </table>
 
@@ -136,7 +253,8 @@
     <div class="footer-container">
       <div class="footer-marca">
         <a href="../index.html" class="footer-logo">🌿 SoulUp</a>
-        <p>Transforme hábitos em impacto. Ganhe pontos por ações sustentáveis e concorra a subsídios reais na sua conta de energia.</p>
+        <p>Transforme hábitos em impacto. Ganhe pontos por ações sustentáveis e concorra a subsídios reais na sua conta
+          de energia.</p>
       </div>
       <div class="footer-col">
         <h4>Navegação</h4>
@@ -159,11 +277,6 @@
       <p>© 2025 SoulUp — Programa Prospera. Todos os direitos reservados.</p>
     </div>
   </footer>
-
-  <script src="../js/nav.js" defer></script>
-  <script src="../js/fade.js" defer></script>
-  <script src="../js/nav.js" defer></script>
-  <script src="../js/fade.js" defer></script>
-  <script src="../js/ranking.js" defer></script>
 </body>
+
 </html>
