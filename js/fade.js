@@ -1,7 +1,3 @@
-/* ============================================================
-   FADE.JS — animação de entrada nos elementos .fade-in
-   ============================================================ */
-
 var fadeEls = document.querySelectorAll('.fade-in');
 
 if (fadeEls.length) {

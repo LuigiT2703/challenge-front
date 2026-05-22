@@ -1,8 +1,3 @@
-/* ============================================================
-   NAV.JS — hambúrguer mobile + scrollspy
-   ============================================================ */
-
-/* ---- Hambúrguer ---- */
 var navBotao = document.querySelector('.nav-botao');
 var navLinks  = document.querySelector('.nav-links');
 
@@ -12,7 +7,6 @@ if (navBotao && navLinks) {
   });
 }
 
-/* ---- Scrollspy ---- */
 (function () {
   var secoes = document.querySelectorAll('section[id]');
   if (!secoes.length) return;

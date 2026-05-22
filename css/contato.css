@@ -6,7 +6,6 @@
 .contato-hero h1 { color: #fff; font-size: 2.5rem; }
 .contato-hero p  { color: rgba(255,255,255,.85); margin-top: .5rem; }
 
-/* ── Grid ── */
 .contato-grid {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
@@ -14,7 +13,6 @@
   align-items: start;
 }
 
-/* ── Formulário ── */
 .form-card {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -54,7 +52,6 @@
 
 .form-aviso { font-size: .88rem; min-height: 1.2rem; margin-bottom: .5rem; }
 
-/* ── Informações ── */
 .info-card {
   display: flex;
   flex-direction: column;
@@ -80,14 +77,12 @@
 .info-item strong { display: block; font: 600 .95rem var(--font); color: var(--text); margin-bottom: .25rem; }
 .info-item span   { font-size: .88rem; color: var(--muted); }
 
-/* ── Main wrapper ── */
 .contato-main {
   max-width: 1120px;
   margin: 0 auto;
   padding: 64px 24px;
 }
 
-/* ── Botão submit ── */
 .form-submit {
   display: block;
   width: 100%;
@@ -102,7 +97,6 @@
 }
 .form-submit:hover { opacity: .88; }
 
-/* ── Label redes ── */
 .redes-label {
   font: 600 .88rem var(--font);
   color: var(--text);

@@ -1,8 +1,3 @@
-/* ============================================================
-   FAQ.JS — accordion e busca
-   ============================================================ */
-
-/* ---- Accordion ---- */
 var faqItens = document.querySelectorAll('.faq-item');
 
 faqItens.forEach(function (item) {
@@ -16,7 +11,6 @@ faqItens.forEach(function (item) {
   });
 });
 
-/* ---- Busca ---- */
 var buscaInput = document.getElementById('buscaFaq');
 var faqLista   = document.getElementById('faqLista');
 

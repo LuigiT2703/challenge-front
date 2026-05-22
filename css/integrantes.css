@@ -1,5 +1,3 @@
-/* ── Cards de integrantes ── */
-
 header { padding-bottom: 2rem; }
 
 .foto-gurizada {
@@ -54,7 +52,6 @@ header { padding-bottom: 2rem; }
   background: var(--gradient);
 }
 
-/* ── Redes sociais ── */
 .redes-sociais {
   display: flex;
   margin-top: auto;

@@ -1,11 +1,9 @@
-/* ── Layout geral do Dashboard ── */
 .dash-layout {
   display: grid;
   grid-template-columns: 260px 1fr;
   min-height: calc(100vh - var(--nav-h));
 }
 
-/* ── Sidebar ── */
 .sidebar {
   background: var(--dark);
   padding: 2rem 1.5rem;
@@ -58,7 +56,6 @@
 .pontos-total span { color: rgba(255,255,255,.6); font-size: .85rem; }
 .pontos-total strong { font: 700 1.15rem var(--font); background: var(--gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
 
-/* ── Nav da sidebar ── */
 .sidebar-nav {
   display: flex;
   flex-direction: column;
@@ -77,7 +74,6 @@
   color: #fff;
 }
 
-/* ── Main ── */
 .dash-main {
   background: var(--bg);
   padding: 2rem;
@@ -87,7 +83,6 @@
   overflow-y: auto;
 }
 
-/* ── Welcome ── */
 .dash-welcome {
   display: flex;
   align-items: center;
@@ -107,7 +102,6 @@
   white-space: nowrap;
 }
 
-/* ── Stats cards ── */
 .dash-stats {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -134,7 +128,6 @@
 }
 .dash-stat span { font: 400 .82rem var(--font); color: var(--muted); }
 
-/* ── Rows ── */
 .dash-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
 
 .dash-card {
@@ -145,7 +138,6 @@
 }
 .dash-card h3 { font: 600 1.05rem var(--font); color: var(--text); margin-bottom: 1.25rem; }
 
-/* ── Nível ── */
 .level-info {
   display: flex;
   justify-content: space-between;
@@ -162,14 +154,13 @@
 }
 .level-fill {
   height: 100%;
-  width: 62%; /* valor inicial — sobrescrito pelo JS ao carregar e ao somar pontos */
+  width: 62%;
   background: var(--gradient);
   border-radius: var(--radius-full);
   transition: width .5s ease;
 }
 .level-pts { font: 500 .82rem var(--font); color: var(--muted); }
 
-/* ── Ações rápidas ── */
 .acoes-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -193,7 +184,6 @@
 .a-icon { font-size: 1.4rem; }
 .a-pts  { font: 600 .75rem var(--font); color: var(--green); }
 
-/* ── Feed ── */
 .feed-lista { display: flex; flex-direction: column; gap: .5rem; }
 .feed-item {
   display: flex;
@@ -206,7 +196,6 @@
   transition: background var(--transition);
 }
 
-/* Animação de entrada para novos itens */
 @keyframes feedEntrar {
   from { opacity: 0; transform: translateY(-8px); background: rgba(46,204,113,.15); }
   to   { opacity: 1; transform: translateY(0);    background: var(--bg); }
@@ -217,7 +206,6 @@
 .f-time  { color: var(--muted); font-size: .78rem; white-space: nowrap; }
 .f-pts   { font: 700 .85rem var(--font); color: var(--green); white-space: nowrap; }
 
-/* ── Badges ── */
 .badges-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: .75rem; }
 .badge-item {
   display: flex;
@@ -240,7 +228,6 @@
 }
 .b-icon { font-size: 1.4rem; }
 
-/* ── Responsivo ── */
 @media (max-width: 900px) {
   .dash-layout { grid-template-columns: 1fr; }
   .sidebar { flex-direction: row; flex-wrap: wrap; justify-content: space-between; }

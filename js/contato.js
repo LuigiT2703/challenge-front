@@ -1,7 +1,3 @@
-/* ============================================================
-   CONTATO.JS — validação do formulário de contato
-   ============================================================ */
-
 var contatoForm = document.querySelector('.contato-form');
 
 if (contatoForm) {
@@ -31,7 +27,7 @@ if (contatoForm) {
     }
 
     var avisos = contatoForm.querySelectorAll('.form-aviso');
-    var aviso  = avisos[avisos.length - 1]; /* usa o último .form-aviso como feedback geral */
+    var aviso  = avisos[avisos.length - 1];
 
     if (aviso) {
       if (valido) {

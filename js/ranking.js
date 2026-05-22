@@ -1,8 +1,3 @@
-/* ============================================================
-   RANKING.JS — tabs de categoria + contador regressivo
-   ============================================================ */
-
-/* ---- Sincroniza pontos e reordena tabela ---- */
 (function () {
   var salvo = localStorage.getItem('soulup_pts');
   if (salvo === null) return;
@@ -10,29 +5,24 @@
   var pts = parseInt(salvo, 10);
   if (isNaN(pts)) return;
 
-  var tabela    = document.querySelector('.ranking-table tbody');
+  var tabela     = document.querySelector('.ranking-table tbody');
   var minhaLinha = document.querySelector('.minha-linha');
   if (!tabela || !minhaLinha) return;
 
-  /* 1. Atualiza os pontos na linha do usuário */
   var ptsCelula = minhaLinha.querySelector('td strong');
   if (ptsCelula) ptsCelula.textContent = pts.toLocaleString('pt-BR') + ' pts';
 
-  /* 2. Lê todos os pontos de cada linha */
   function lerPtsLinha(tr) {
     var strong = tr.querySelector('td strong');
     if (!strong) return 0;
     return parseInt(strong.textContent.replace(/\D/g, ''), 10) || 0;
   }
 
-  /* 3. Pega as linhas, ordena por pontos (maior primeiro) */
   var linhas = Array.from(tabela.querySelectorAll('tr'));
   linhas.sort(function (a, b) { return lerPtsLinha(b) - lerPtsLinha(a); });
 
-  /* 4. Reinsere na ordem certa */
   linhas.forEach(function (tr) { tabela.appendChild(tr); });
 
-  /* 5. Renumera posições a partir de 1 — bolinha verde só no top 3 */
   linhas.forEach(function (tr, i) {
     var posEl = tr.querySelector('.pos-num');
     if (!posEl) return;
@@ -44,12 +34,10 @@
     }
   });
 
-  /* 6. Salva posição real no localStorage para o dashboard ler */
   var minhaPos = linhas.indexOf(minhaLinha) + 1;
   localStorage.setItem('soulup_pos', minhaPos);
 })();
 
-/* ---- Tabs ---- */
 var tabBtns = document.querySelectorAll('.tab-btn');
 
 tabBtns.forEach(function (btn) {
@@ -64,10 +52,8 @@ tabBtns.forEach(function (btn) {
   });
 });
 
-/* ---- Countdown — fecha no último dia do mês às 23:59:59 ---- */
 function fimDoMes() {
   var agora = new Date();
-  /* Dia 0 do próximo mês = último dia do mês atual */
   return new Date(agora.getFullYear(), agora.getMonth() + 1, 0, 23, 59, 59);
 }
 
@@ -80,7 +66,6 @@ function atualizarContagem() {
   var sEl = document.getElementById('cd-seg');
 
   if (diff <= 0) {
-    /* Mês virou: zera tudo */
     if (dEl) dEl.textContent = '00';
     if (hEl) hEl.textContent = '00';
     if (mEl) mEl.textContent = '00';

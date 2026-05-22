@@ -1,7 +1,3 @@
-/* ============================================================
-   CONTADOR.JS — animação dos números na seção de stats
-   ============================================================ */
-
 function animarContador(el) {
   var alvo   = parseInt(el.getAttribute('data-count'), 10);
   var tempo  = 1800;
