@@ -30,7 +30,9 @@
 
 /* HERO */
 .hero {
-  background: var(--dark);
+  background-image:url(/img/floresta.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 96px 24px 80px;
   text-align: center;
 }
