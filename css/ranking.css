@@ -7,8 +7,30 @@
   padding: 80px 24px 60px;
   text-align: center;
 }
-.ranking-hero h1 { color: #fff; font-size: 2.5rem; }
-.ranking-hero p  { color: rgba(255,255,255,.85); margin-top: .5rem; }
+.ranking-hero .chip {
+  display: inline-block;
+  background: rgba(255,255,255,.15);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,.35);
+  border-radius: var(--radius-full);
+  padding: 5px 16px;
+  font: 600 .75rem var(--font);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-shadow: none;
+}
+
+.ranking-hero h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  text-shadow: 0 2px 16px rgba(0,0,0,.8), 0 1px 4px rgba(0,0,0,.9);
+}
+.ranking-hero p  {
+  color: #fff;
+  margin-top: .5rem;
+  text-shadow: 0 1px 8px rgba(0,0,0,.85);
+}
 
 /* ── Tabs ── */
 .tabs-wrap {
