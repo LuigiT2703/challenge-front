@@ -80,9 +80,9 @@
 .podium-box.p2 { background: linear-gradient(135deg,#f4f4f4,#ebebeb); border-color: #c0c0c0; }
 .podium-box.p3 { background: linear-gradient(135deg,#fff4f0,#ffe8e0); border-color: #cd7f32; }
 .podium-medal  { font-size: 2.8rem; }
-.podium-pos    { font: 700 .8rem var(--font); color: var(--muted); }
-.podium-nome   { font: 700 1.1rem var(--font); color: var(--text); }
-.podium-cidade { font-size: .82rem; color: var(--muted); }
+.podium-pos    { font: 700 .8rem var(--font); color: #5a6a7a; }
+.podium-nome   { font: 700 1.1rem var(--font); color: #1a202c; }
+.podium-cidade { font-size: .82rem; color: #5a6a7a; }
 
 /* ── Tabela ranking ── */
 .ranking-table {

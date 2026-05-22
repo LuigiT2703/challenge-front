@@ -53,6 +53,30 @@ var posStatEl = (function () {
   return null;
 })();
 
+/* Card de ações este mês — o <strong> dentro do stat com "Ações" */
+var acoesStatEl = (function () {
+  var stats = document.querySelectorAll('.dash-stat');
+  for (var i = 0; i < stats.length; i++) {
+    if (stats[i].textContent.includes('Ações')) {
+      return stats[i].querySelector('strong');
+    }
+  }
+  return null;
+})();
+
+/* ---- Lê e salva contagem de ações do localStorage ---- */
+function lerAcoes() {
+  var salvo = localStorage.getItem('soulup_acoes');
+  if (salvo !== null) return parseInt(salvo, 10);
+  /* fallback: valor atual no DOM */
+  return acoesStatEl ? parseInt(acoesStatEl.textContent, 10) || 0 : 0;
+}
+
+function atualizarAcoes(total) {
+  localStorage.setItem('soulup_acoes', total);
+  if (acoesStatEl) acoesStatEl.textContent = total;
+}
+
 /* ---- Lê pontos do localStorage (fallback: DOM) ---- */
 function lerPontos() {
   var salvo = localStorage.getItem('soulup_pts');
@@ -170,6 +194,7 @@ var ICONES = {
 /* ---- Inicializa ---- */
 restaurarFeed();
 atualizarTudo(lerPontos());
+atualizarAcoes(lerAcoes());
 
 /* ---- Clique nos botões de ação ---- */
 acaoBtns.forEach(function (btn) {
@@ -180,6 +205,7 @@ acaoBtns.forEach(function (btn) {
     var aPts   = btn.querySelector('.a-pts');
 
     atualizarTudo(lerPontos() + pts);
+    atualizarAcoes(lerAcoes() + 1);
     adicionarFeed(icone, nome, pts);
 
     btn.classList.add('registrado');
