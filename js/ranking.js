@@ -2,6 +2,43 @@
    RANKING.JS — tabs de categoria + contador regressivo
    ============================================================ */
 
+/* ---- Sincroniza pontos e reordena tabela ---- */
+(function () {
+  var salvo = localStorage.getItem('soulup_pts');
+  if (salvo === null) return;
+
+  var pts = parseInt(salvo, 10);
+  if (isNaN(pts)) return;
+
+  var tabela    = document.querySelector('.ranking-table tbody');
+  var minhaLinha = document.querySelector('.minha-linha');
+  if (!tabela || !minhaLinha) return;
+
+  /* 1. Atualiza os pontos na linha do usuário */
+  var ptsCelula = minhaLinha.querySelector('td strong');
+  if (ptsCelula) ptsCelula.textContent = pts.toLocaleString('pt-BR') + ' pts';
+
+  /* 2. Lê todos os pontos de cada linha */
+  function lerPtsLinha(tr) {
+    var strong = tr.querySelector('td strong');
+    if (!strong) return 0;
+    return parseInt(strong.textContent.replace(/\D/g, ''), 10) || 0;
+  }
+
+  /* 3. Pega as linhas, ordena por pontos (maior primeiro) */
+  var linhas = Array.from(tabela.querySelectorAll('tr'));
+  linhas.sort(function (a, b) { return lerPtsLinha(b) - lerPtsLinha(a); });
+
+  /* 4. Reinsere na ordem certa */
+  linhas.forEach(function (tr) { tabela.appendChild(tr); });
+
+  /* 5. Renumera posições a partir de 4 (pódio ocupa 1-3) */
+  linhas.forEach(function (tr, i) {
+    var posEl = tr.querySelector('.pos-num');
+    if (posEl) posEl.textContent = i + 4;
+  });
+})();
+
 /* ---- Tabs ---- */
 var tabBtns = document.querySelectorAll('.tab-btn');
 

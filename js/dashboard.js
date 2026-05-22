@@ -11,27 +11,33 @@ var levelPts    = document.querySelector('.level-pts');
 /* Pontos para subir de nível (Eco Guerreiro → Guardião Verde) */
 var META = 2000;
 
-/* Lê o valor atual de pontos (pega do primeiro elemento) */
+/* Lê o valor atual de pontos — prioriza localStorage */
 function lerPontos() {
+  var salvo = localStorage.getItem('soulup_pts');
+  if (salvo !== null) return parseInt(salvo, 10);
+  /* fallback: lê do DOM na primeira vez */
   var primeiro = document.querySelector('.dash-total-pts');
   if (!primeiro) return 0;
   return parseInt(primeiro.textContent.replace(/\D/g, ''), 10) || 0;
 }
 
-/* Atualiza todos os elementos de pontos + barra de progresso */
+/* Atualiza DOM + salva no localStorage (ranking vai ler daqui) */
 function atualizarTudo(novos) {
-  /* 1. Todos os contadores de pontos */
+  /* 1. Persiste */
+  localStorage.setItem('soulup_pts', novos);
+
+  /* 2. Todos os contadores de pontos */
   todosPtsEls.forEach(function (el) {
     el.textContent = novos.toLocaleString('pt-BR');
   });
 
-  /* 2. Barra de progresso */
+  /* 3. Barra de progresso */
   if (levelFill) {
     var pct = Math.min((novos / META) * 100, 100);
     levelFill.style.width = pct + '%';
   }
 
-  /* 3. Texto abaixo da barra */
+  /* 4. Texto abaixo da barra */
   if (levelPts) {
     var faltam = Math.max(META - novos, 0);
     levelPts.textContent =
