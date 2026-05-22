@@ -17,24 +17,34 @@ tabBtns.forEach(function (btn) {
   });
 });
 
-/* ---- Countdown ---- */
+/* ---- Countdown — fecha no último dia do mês às 23:59:59 ---- */
+function fimDoMes() {
+  var agora = new Date();
+  /* Dia 0 do próximo mês = último dia do mês atual */
+  return new Date(agora.getFullYear(), agora.getMonth() + 1, 0, 23, 59, 59);
+}
+
 function atualizarContagem() {
-  var fim  = new Date();
-  fim.setDate(fim.getDate() + 18);
-  fim.setHours(fim.getHours() + 14);
-
-  var diff = fim - new Date();
-  if (diff <= 0) return;
-
-  var dias  = Math.floor(diff / 86400000);
-  var horas = Math.floor((diff % 86400000) / 3600000);
-  var min   = Math.floor((diff % 3600000)  / 60000);
-  var seg   = Math.floor((diff % 60000)    / 1000);
+  var diff = fimDoMes() - new Date();
 
   var dEl = document.getElementById('cd-dias');
   var hEl = document.getElementById('cd-horas');
   var mEl = document.getElementById('cd-min');
   var sEl = document.getElementById('cd-seg');
+
+  if (diff <= 0) {
+    /* Mês virou: zera tudo */
+    if (dEl) dEl.textContent = '00';
+    if (hEl) hEl.textContent = '00';
+    if (mEl) mEl.textContent = '00';
+    if (sEl) sEl.textContent = '00';
+    return;
+  }
+
+  var dias  = Math.floor(diff / 86400000);
+  var horas = Math.floor((diff % 86400000) / 3600000);
+  var min   = Math.floor((diff % 3600000)  / 60000);
+  var seg   = Math.floor((diff % 60000)    / 1000);
 
   if (dEl) dEl.textContent = String(dias).padStart(2, '0');
   if (hEl) hEl.textContent = String(horas).padStart(2, '0');
