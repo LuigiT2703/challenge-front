@@ -37,6 +37,10 @@
     var posEl = tr.querySelector('.pos-num');
     if (posEl) posEl.textContent = i + 4;
   });
+
+  /* 6. Salva posição real no localStorage para o dashboard ler */
+  var minhaPos = linhas.indexOf(minhaLinha) + 4;
+  localStorage.setItem('soulup_pos', minhaPos);
 })();
 
 /* ---- Tabs ---- */
