@@ -162,9 +162,10 @@
 }
 .level-fill {
   height: 100%;
-  width: 62%;
+  width: 62%; /* valor inicial — sobrescrito pelo JS ao carregar e ao somar pontos */
   background: var(--gradient);
   border-radius: var(--radius-full);
+  transition: width .5s ease;
 }
 .level-pts { font: 500 .82rem var(--font); color: var(--muted); }
 
