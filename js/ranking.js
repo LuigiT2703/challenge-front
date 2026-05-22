@@ -32,14 +32,20 @@
   /* 4. Reinsere na ordem certa */
   linhas.forEach(function (tr) { tabela.appendChild(tr); });
 
-  /* 5. Renumera posições a partir de 4 (pódio ocupa 1-3) */
+  /* 5. Renumera posições a partir de 1 — bolinha verde só no top 3 */
   linhas.forEach(function (tr, i) {
     var posEl = tr.querySelector('.pos-num');
-    if (posEl) posEl.textContent = i + 4;
+    if (!posEl) return;
+    posEl.textContent = i + 1;
+    if (i < 3) {
+      posEl.classList.add('top');
+    } else {
+      posEl.classList.remove('top');
+    }
   });
 
   /* 6. Salva posição real no localStorage para o dashboard ler */
-  var minhaPos = linhas.indexOf(minhaLinha) + 4;
+  var minhaPos = linhas.indexOf(minhaLinha) + 1;
   localStorage.setItem('soulup_pos', minhaPos);
 })();
 
