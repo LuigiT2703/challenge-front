@@ -29,6 +29,7 @@
 body {
   background: var(--bg);
   font-family: var(--font);
+  overflow-x: hidden;
 }
 
 h1 {

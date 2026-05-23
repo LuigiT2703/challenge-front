@@ -165,5 +165,11 @@
 @media (max-width: 600px) {
   .hero h1 { font-size: 2rem; }
   .cat-grid { grid-template-columns: 1fr; }
+  .stat-numero { font-size: 1.8rem; }
+  .stat-label { font-size: .8rem; }
+}
+@media (max-width: 400px) {
+  .stats-container { grid-template-columns: 1fr; }
+  .stat-numero { font-size: 2rem; }
 }
 
