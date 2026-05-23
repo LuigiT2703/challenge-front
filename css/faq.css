@@ -97,3 +97,15 @@
 .btn { display: inline-block; padding: 12px 28px; border-radius: var(--radius-full); font: 600 .95rem var(--font); text-decoration: none; transition: opacity var(--transition); }
 .btn-primary { background: var(--gradient); color: #fff; }
 .btn-primary:hover { opacity: .88; }
+
+@media (max-width: 768px) {
+  .faq-hero { padding: 48px 24px 40px; }
+  .faq-hero h1 { font-size: 1.8rem; }
+  .section { padding: 40px 16px; }
+  .faq-cta { padding: 1.75rem 1.25rem; }
+}
+
+@media (max-width: 480px) {
+  .faq-busca { padding: 8px 16px; }
+  .faq-pergunta { padding: 1rem 1.25rem; font-size: .95rem; }
+}
