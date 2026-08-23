@@ -1,0 +1,201 @@
+.ranking-hero {
+  background-image: url(/img/trofeu\ 3\ png.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 280px;
+  padding: 80px 24px 60px;
+  text-align: center;
+}
+.ranking-hero .chip {
+  display: inline-block;
+  background: rgba(255,255,255,.15);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,.35);
+  border-radius: var(--radius-full);
+  padding: 5px 16px;
+  font: 600 .75rem var(--font);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-shadow: none;
+}
+
+.ranking-hero h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  text-shadow: 0 2px 16px rgba(0,0,0,.8), 0 1px 4px rgba(0,0,0,.9);
+}
+.ranking-hero p  {
+  color: #fff;
+  margin-top: .5rem;
+  text-shadow: 0 1px 8px rgba(0,0,0,.85);
+}
+
+.tabs-wrap {
+  display: flex;
+  gap: .5rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+.tab-btn {
+  padding: 9px 22px;
+  border-radius: var(--radius-full);
+  border: 1.5px solid var(--border);
+  background: var(--surface);
+  font: 500 .88rem var(--font);
+  color: var(--muted);
+  cursor: pointer;
+  transition: all var(--transition);
+}
+.tab-btn.ativo,
+.tab-btn:hover {
+  background: var(--gradient);
+  color: #fff;
+  border-color: transparent;
+}
+
+.podium-wrap {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1.25rem;
+  margin-bottom: 3rem;
+}
+.podium-box {
+  border-radius: var(--radius-md);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .6rem;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  transition: transform var(--transition);
+}
+.podium-box:hover { transform: translateY(-4px); }
+.podium-box.p1 { background: linear-gradient(135deg,#fff9e6,#fff3cc); border-color: #ffd700; }
+.podium-box.p2 { background: linear-gradient(135deg,#f4f4f4,#ebebeb); border-color: #c0c0c0; }
+.podium-box.p3 { background: linear-gradient(135deg,#fff4f0,#ffe8e0); border-color: #cd7f32; }
+.podium-medal  { font-size: 2.8rem; }
+.podium-pos    { font: 700 .8rem var(--font); color: #5a6a7a; }
+.podium-nome   { font: 700 1.1rem var(--font); color: #1a202c; }
+.podium-cidade { font-size: .82rem; color: #5a6a7a; }
+
+.ranking-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--surface);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 2rem;
+}
+.ranking-table thead tr { background: var(--dark); }
+.ranking-table th {
+  padding: 1rem 1.25rem;
+  text-align: left;
+  font: 600 .82rem var(--font);
+  color: rgba(255,255,255,.7);
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+.ranking-table td {
+  padding: .9rem 1.25rem;
+  font-size: .9rem;
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+}
+.ranking-table tr:last-child td { border-bottom: none; }
+.ranking-table tbody tr:hover { background: rgba(46,204,113,.04); }
+.ranking-table .minha-linha { background: rgba(46,204,113,.08) !important; }
+.ranking-table .minha-linha td { font-weight: 600; }
+
+.pos-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  font: 700 .85rem var(--font);
+  background: var(--bg);
+  color: var(--muted);
+}
+.pos-num.top { background: var(--gradient); color: #fff; }
+
+.user-info { display: flex; align-items: center; gap: .75rem; }
+.user-avatar {
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: var(--gradient);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+.tend-up   { color: var(--green); font-weight: 600; }
+.tend-down { color: #e74c3c; }
+.tend-eq   { color: var(--muted); }
+
+.prizes-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+.prize-card {
+  border-radius: var(--radius-md);
+  padding: 1.75rem 1.5rem;
+  text-align: center;
+  border: 1px solid var(--border);
+}
+.prize-card.p1 { background: linear-gradient(135deg,#fff9e6,#fff3cc); border-color: #ffd700; }
+.prize-card.p2 { background: linear-gradient(135deg,#f4f4f4,#ebebeb); border-color: #c0c0c0; }
+.prize-card.p3 { background: linear-gradient(135deg,#fff4f0,#ffe8e0); border-color: #cd7f32; }
+.prize-card .prize-icon { font-size: 2.2rem; margin-bottom: .75rem; }
+.prize-card h3 { margin-bottom: .4rem; }
+
+.countdown-bar {
+  background: var(--dark);
+  border-radius: var(--radius-md);
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.countdown-bar p { color: rgba(255,255,255,.75); font-size: .9rem; margin: 0; }
+.countdown-nums  { display: flex; gap: .75rem; }
+.cd-box {
+  background: rgba(255,255,255,.08);
+  border-radius: var(--radius-sm);
+  padding: .75rem 1rem;
+  text-align: center;
+  min-width: 60px;
+}
+.cd-box strong { display: block; font: 700 1.4rem var(--font); color: var(--green); }
+.cd-box span   { font-size: .7rem; color: rgba(255,255,255,.5); text-transform: uppercase; }
+
+@media (max-width: 768px) {
+  .podium-wrap { grid-template-columns: 1fr; }
+  .prizes-grid { grid-template-columns: 1fr; }
+  .ranking-table td:nth-child(4),
+  .ranking-table th:nth-child(4) { display: none; }
+}
+
+.section-label {
+  display: block;
+  text-align: center;
+  font: 600 .75rem var(--font);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--green);
+  margin-bottom: .5rem;
+}
+.section-title {
+  text-align: center;
+  font: 700 1.75rem var(--font);
+  color: var(--text);
+  margin-bottom: 2rem;
+}
